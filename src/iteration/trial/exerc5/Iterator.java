@@ -4,7 +4,7 @@ public class Iterator {
 
 	public void loopInLoop(int min, int max) {
 
-		while (min < max) {
+		while (min < max + 1) {
 
 			for (int i = 0; i < min; i++) {
 
