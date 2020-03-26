@@ -2,22 +2,21 @@ package iteration.trial.exerc3;
 
 public class Iterator {
 
-	public String flowChart(int A, int max) {
+	public void loopInLoop(int min, int max) {
 
-		while (A <= max) {
+		int min2 = min;
 
-			if (A % 2 == 0) {
-				System.out.println("-" + A);
+		for (min = 0; min <= max; min++) {
+
+			System.out.println(min);
+
+			for (min2 = 0; min2 <= max; min2++) {
+
+				System.out.println(min2);
+
 			}
-			if (A % 2 != 1) {
-				System.out.println("*" + A);
-			}
-
-			A++;
 
 		}
-
-		return ("END");
 
 	}
 
