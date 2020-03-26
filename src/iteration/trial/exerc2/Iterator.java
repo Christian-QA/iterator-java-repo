@@ -4,16 +4,20 @@ public class Iterator {
 
 	public String flowChart(int A, int max) {
 
-		while (A <= max) {
+		int min = A;
+		while (min <= max) {
 
-			if (A % 2 == 0) {
-				System.out.println("-" + A);
+			int B = min - 1;
+			if (min % 2 != 1) {
+				if (B > A) {
+					System.out.println("*" + B);
+				}
 			}
-			if (A % 2 != 1) {
-				System.out.println("*" + A);
+			if (min % 2 == 0) {
+				System.out.println("-" + min);
 			}
 
-			A++;
+			min++;
 
 		}
 
